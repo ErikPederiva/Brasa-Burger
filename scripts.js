@@ -21,7 +21,6 @@ let desconto = false
 let exibeVegano = false
 let valorTotal
 
-
 botaoCardapio.addEventListener('click', () => {botaoValorTotal.innerHTML = 'Valor Total do cardápio', desconto = false, exibeSoma = false, exibeVegano = false, mostrarCardapio(menuOptions)})
 function mostrarCardapio(listaProdutos) {
 
