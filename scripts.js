@@ -22,8 +22,9 @@ let exibeVegano = false
 let valorTotal
 
 
-botaoCardapio.addEventListener('click', () => {desconto = false, exibeSoma = false, exibeVegano = false, mostrarCardapio(menuOptions)})
+botaoCardapio.addEventListener('click', () => {botaoValorTotal.innerHTML = 'Valor Total do cardápio', desconto = false, exibeSoma = false, exibeVegano = false, mostrarCardapio(menuOptions)})
 function mostrarCardapio(listaProdutos) {
+
     let itemLista = ''
     listaProdutos.forEach (produto => {
         itemLista += `
@@ -115,11 +116,12 @@ function somaTudo() {
     }
 }
 
-botaoVegano.addEventListener('click', filtroVegano)
+botaoVegano.addEventListener('click',() => {botaoValorTotal.innerHTML = `Valor total <br> opções veganas`, filtroVegano()})
 function filtroVegano() {
     exibeSoma = false
     exibeVegano = true
     desconto = false
+
     listaVegana = menuOptions.filter (produto => {
         if(produto.vegan) {
             return true
