@@ -10,4 +10,4 @@
 <P>- CSS</P>
 <P>- JavaScript</P>
 <br>
-<img src="https://github.com/ErikPederiva/Brasa-Burger/blob/main/assets/layout-brasa-burger.png" alt="layout" >
+<img src="https://github.com/ErikPederiva/Brasa-Burger/blob/main/assets/layout.png" alt="layout" >
